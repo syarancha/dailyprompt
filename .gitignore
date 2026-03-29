@@ -1,0 +1,8 @@
+.DS_Store
+assets/videos/*.mp4
+
+# local artifacts
+codex/
+www
+apps/daily-editor/
+daily editor/

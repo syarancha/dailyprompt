@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KFZ3HS3B');</script>
+    <!-- End Google Tag Manager -->
+    <meta name="description" content="Second Brush 포트폴리오와 Daily Prompt 아카이브를 탐색하는 에디토리얼 피드." />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://www.secondbrush.co.kr/home/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Second Brush" />
+    <meta property="og:title" content="Second Brush" />
+    <meta property="og:description" content="Second Brush 포트폴리오와 Daily Prompt 아카이브를 탐색하는 에디토리얼 피드." />
+    <meta property="og:url" content="https://www.secondbrush.co.kr/home/" />
+    <title>Second Brush</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,400&family=JetBrains+Mono:wght@400&family=Oswald:wght@500;700&family=Space+Grotesk:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFZ3HS3B" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="site-header">
+      <a class="brand brand-glitch" href="/home/">
+        <span class="glitch-text" data-text="SECOND BRUSH">SECOND BRUSH</span>
+      </a>
+
+      <a class="ask-bar" href="/home/" aria-label="Open ask assistant" data-track-event="cta_click" data-track-label="header_ask_bar">
+        <span class="ask-bar-text">Ask me anything...</span>
+        <span class="ask-send" aria-hidden="true">
+          <svg viewBox="0 0 20 20" focusable="false" aria-hidden="true">
+            <path d="m10 4.8 4.3 4.3-.95.95-2.65-2.65v7.75H9.35V7.4L6.7 10.05l-.95-.95z" />
+          </svg>
+        </span>
+      </a>
+
+      <nav class="header-actions" aria-label="Primary links">
+        <a href="/contact/" class="contact-link" data-track-event="cta_click" data-track-label="header_contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="layout">
+      <section id="feed" class="feed" aria-live="polite"></section>
+    </main>
+
+    <template id="card-template">
+      <article class="card">
+        <div class="card-media-wrap"></div>
+        <div class="card-meta">
+          <p class="card-title"></p>
+          <p class="card-type"></p>
+        </div>
+      </article>
+    </template>
+
+    <script src="/src/site.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
