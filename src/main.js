@@ -444,7 +444,7 @@ async function fetchGhostImagePage(page) {
   apiUrl.searchParams.set('limit', String(GHOST_PAGE_LIMIT));
   apiUrl.searchParams.set('page', String(page));
   apiUrl.searchParams.set('order', 'published_at desc');
-  apiUrl.searchParams.set('fields', 'title,url,html');
+  apiUrl.searchParams.set('fields', 'title,url,html,feature_image');
   apiUrl.searchParams.set('formats', 'html');
 
   const response = await fetch(apiUrl.toString());
@@ -459,14 +459,28 @@ async function fetchGhostImagePage(page) {
 
   const cards = [];
   posts.forEach((post) => {
-    const image = extractLastImageFromHtml(post.html || '');
-    if (!image) return;
+    const numberMatch = (post.title || '').match(/#\s*(\d+)/);
+    const postNumber = numberMatch ? Number.parseInt(numberMatch[1], 10) : 0;
+
+    let src = null;
+    let ratio = null;
+
+    if (postNumber >= 699 && post.feature_image) {
+      src = resolveMediaUrl(post.feature_image, post.url);
+    } else {
+      const image = extractLastImageFromHtml(post.html || '');
+      if (!image) return;
+      src = resolveMediaUrl(image.src, post.url);
+      ratio = image.ratio;
+    }
+
+    if (!src) return;
 
     cards.push({
       type: 'image',
-      src: resolveMediaUrl(image.src, post.url),
+      src,
       title: buildPromptHoverTitle(post.title),
-      ratio: image.ratio,
+      ratio,
       href: post.url || 'https://blog.secondbrush.co.kr/',
       category: 'Daily Prompt'
     });
