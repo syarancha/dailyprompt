@@ -27,7 +27,7 @@
   const FINAL_COPY_DATA = {
     botName: '하로',
     botAvatar: '/assets/images/haro_profile.png',
-    CONTACT_PAGE_URL: 'https://www.secondbrush.co.kr/contact/',
+    CONTACT_PAGE_URL: 'https://iamarancia.notion.site/1a06ec0e5cd2808f8db0ca2d5a79ece3?pvs=105',
     welcome: {
       messages: [
         '안녕하세요. 세컨드 브러시의 AI 비서, 하로입니다.',
@@ -55,10 +55,10 @@
 
       lecture: {
         messages: [
-          '강의 만족도 만점을 기록할 정도로 열성을 다해 강의를 한다는 소문을 벌써 들으셨군요?😉\n진행 가능한 주제는 다음과 같아요.\n\n- **생성형 AI 전반 트렌드 특강**\n- **이미지 및 영상 생성 등 콘텐츠 제작 워크숍**\n- **디자이너를 위한 생성형 AI 활용법**\n\n미리 아래와 같이 양해 말씀도 함께 전해드려요.\n\n1️⃣ 강의 날짜 기준 최소 1달 전에 문의를 해주시는 게 좋아요. 일정이 빠르게 마감되고 있어요.\n2️⃣ 온/오프라인 강의 진행 시, 별도 녹화 및 보관은 원하지 않아요.\n3️⃣ 온라인 강의 제작은 현재 받지 않고 있어요.\n\n상세한 일정과 예산은 Contact 페이지를 통해 문의 남겨주세요.'
+          '강의 만족도 만점을 기록할 정도로 열성을 다해 강의를 한다는 소문을 벌써 들으셨군요?😉\n진행 가능한 주제는 다음과 같아요.\n\n- **생성형 AI 전반 트렌드 특강**\n- **이미지 및 영상 생성 등 콘텐츠 제작 워크숍**\n- **디자이너를 위한 생성형 AI 활용법**\n\n미리 아래와 같이 양해 말씀도 함께 전해드려요.\n\n1️⃣ 강의 날짜 기준 최소 1달 전에 문의를 해주시는 게 좋아요. 일정이 빠르게 마감되고 있어요.\n2️⃣ 온/오프라인 강의 진행 시, 별도 녹화 및 보관은 원하지 않아요.\n3️⃣ 온라인 강의 제작은 현재 받지 않고 있어요.\n\n상세한 일정과 예산을 아래 버튼을 통해 문의 남겨주세요.'
         ],
         quickReplies: [
-          { label: 'Contact 페이지에 남기기', action: { type: 'openUrl', url: 'CONTACT_PAGE_URL' } },
+          { label: '바로 문의하기', action: { type: 'openUrl', url: 'CONTACT_PAGE_URL' } },
           { label: '문의 템플릿 보기', action: { type: 'runSequence', id: 'lecture_template' } },
           { label: '처음으로', action: { type: 'runSequence', id: 'home' } }
         ]
@@ -66,10 +66,10 @@
 
       lecture_template: {
         messages: [
-          '아래 템플릿을 그대로 복사해서 Contact 페이지에 남겨주세요. 확인이 훨씬 빨라집니다.\n\n[강의 문의 템플릿]\n- 희망 날짜/시간:\n- 장소/형태(오프라인/온라인):\n- 예상 인원:\n- 예산 범위:\n- 대상(직군/레벨):\n- 원하는 주제:\n- 목표(참가자가 얻어가길 원하는 것):\n- 기타 요청:'
+          '아래 템플릿을 그대로 복사해서 문의 페이지에 남겨주세요. 확인이 훨씬 빨라집니다.\n\n[강의 문의 템플릿]\n- 희망 날짜/시간:\n- 장소/형태(오프라인/온라인):\n- 예상 인원:\n- 예산 범위:\n- 대상(직군/레벨):\n- 원하는 주제:\n- 목표(참가자가 얻어가길 원하는 것):\n- 기타 요청:'
         ],
         quickReplies: [
-          { label: 'Contact 페이지 열기', action: { type: 'openUrl', url: 'CONTACT_PAGE_URL' } },
+          { label: '바로 문의하기', action: { type: 'openUrl', url: 'CONTACT_PAGE_URL' } },
           { label: '처음으로', action: { type: 'runSequence', id: 'home' } }
         ]
       },
@@ -86,10 +86,10 @@
 
       ads_ready: {
         messages: [
-          '뉴스레터 광고는 두 가지 방식으로 진행됩니다.\n\n**1️⃣ 프리미엄 콘텐츠:** 뉴스레터 지문 전체를 제품 소개에 할애합니다. 단순히 tutorial을 전달하는 콘텐츠가 아니라 어떻게 하면 이 제품을 사용자가 보다 잘 쓸수 있을지 고민하고 use case를 개발해서 소개하고 있어요. [참고회차](https://blog.secondbrush.co.kr/dailyprompt-676/)\n\n**2️⃣ 하단 배너:** 뉴스레터 하단에 배너와 함께 간략한 소개글이 들어갑니다\n\n참고로 프리미엄 콘텐츠는 뉴스레터의 지속가능성을 위해 월 1회만 협업하고 있어요.\n\n상세한 일정과 예산, 희망 방식(프리미엄/하단 배너)을 Contact 페이지에 남겨주시면, 뉴스레터 지표(오픈율, 클릭률)와 함께 답변드릴게요!'
+          '뉴스레터 광고는 두 가지 방식으로 진행됩니다.\n\n**1️⃣ 프리미엄 콘텐츠:** 뉴스레터 지문 전체를 제품 소개에 할애합니다. 단순히 tutorial을 전달하는 콘텐츠가 아니라 어떻게 하면 이 제품을 사용자가 보다 잘 쓸수 있을지 고민하고 use case를 개발해서 소개하고 있어요. [참고회차](https://blog.secondbrush.co.kr/dailyprompt-676/)\n\n**2️⃣ 하단 배너:** 뉴스레터 하단에 배너와 함께 간략한 소개글이 들어갑니다\n\n참고로 프리미엄 콘텐츠는 뉴스레터의 지속가능성을 위해 월 1회만 협업하고 있어요.\n\n상세한 일정과 예산, 희망 방식(프리미엄/하단 배너)을 아래 버튼으로 남겨주시면, 뉴스레터 지표(오픈율, 클릭률)와 함께 답변드릴게요!'
         ],
         quickReplies: [
-          { label: '문의하기', action: { type: 'openUrl', url: 'CONTACT_PAGE_URL' } },
+          { label: '바로 문의하기', action: { type: 'openUrl', url: 'CONTACT_PAGE_URL' } },
           { label: '처음으로', action: { type: 'runSequence', id: 'home' } }
         ]
       },
@@ -98,20 +98,20 @@
         messages: [
           '협업 제안 감사합니다. 다만 먼저 안내드릴 내용이 있어요.',
           '생성형 AI 콘텐츠 제작 외주 작업 문의는 받지 않습니다. 클라이언트 작업보다는 개인의 창의성과 작업에 더 집중하고 있습니다.',
-          '그 외 문의가 있으시다면 Contact 페이지에 남겨주세요.'
+          '그 외 문의가 있으시다면 아래 버튼으로 남겨주세요.'
         ],
         quickReplies: [
-          { label: 'Contact 페이지에 남기기', action: { type: 'openUrl', url: 'CONTACT_PAGE_URL' } },
+          { label: '바로 문의하기', action: { type: 'openUrl', url: 'CONTACT_PAGE_URL' } },
           { label: '처음으로', action: { type: 'runSequence', id: 'home' } }
         ]
       },
 
       other_inquiry: {
         messages: [
-          '그 외 문의는 Contact 페이지에 남겨주시면 확인 후 답변 드릴게요:)'
+          '그 외 문의는 아래 버튼으로 남겨주시면 확인 후 답변 드릴게요:)'
         ],
         quickReplies: [
-          { label: 'Contact 페이지에 남기기', action: { type: 'openUrl', url: 'CONTACT_PAGE_URL' } },
+          { label: '바로 문의하기', action: { type: 'openUrl', url: 'CONTACT_PAGE_URL' } },
           { label: '처음으로', action: { type: 'runSequence', id: 'home' } }
         ]
       },
@@ -368,7 +368,7 @@
         } else if (action.type === 'openUrl') {
           addMessage('user', item.label);
           openExternalUrl(action.url);
-          await appendAssistantMessages(['상세한 내용은 Contact 페이지에 남겨주세요.']);
+          await appendAssistantMessages(['문의 페이지로 이동합니다. 상세한 내용을 남겨주세요.']);
         } else {
           await runSequence('fallback', item.label);
         }
