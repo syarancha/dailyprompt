@@ -833,6 +833,23 @@ body {
   }
 }
 
+.nav-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1;
+  padding: 10px 0;
+  transition: opacity 140ms ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  opacity: 0.6;
+  outline: none;
+}
+
 .contact-link {
   color: var(--color-inverse);
   text-decoration: none;
