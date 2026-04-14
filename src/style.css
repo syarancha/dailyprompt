@@ -487,7 +487,7 @@ body {
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 24px;
 }
 
 .icon-btn {
@@ -838,7 +838,7 @@ body {
   text-decoration: none;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 14.3px;
   line-height: 1;
   padding: 10px 0;
   transition: opacity 140ms ease;
