@@ -1453,6 +1453,15 @@ body {
   color: var(--color-inverse);
 }
 
+.contact-page .contact-guide {
+  margin: 0 0 10px;
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  color: var(--color-ink);
+}
+
 .contact-page .contact-panel {
   max-width: 540px;
 }
@@ -1492,6 +1501,7 @@ body {
 }
 
 .contact-page .contact-submit {
+  text-decoration: none;
   margin-top: 8px;
   height: 74px;
   border: 1px solid var(--color-primary);
